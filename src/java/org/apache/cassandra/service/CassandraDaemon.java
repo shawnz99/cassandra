@@ -853,7 +853,7 @@ public class CassandraDaemon
     {
         // Start a trhead and setup all the JNI stuff and pass the instance and then have that
         new WorkloadJNI().main();
-        instance.activate();
+        // instance.activate();
     }
 
     public void clearConnectionHistory()
