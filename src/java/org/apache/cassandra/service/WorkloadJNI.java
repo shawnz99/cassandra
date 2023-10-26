@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.apache.cassandra.config.DatabaseDescriptor;
 import org.apache.cassandra.transport.SimpleClient;
 
-public class HelloJNI {
+public class WorkloadJNI{
    static {
       System.loadLibrary("hello");
    } 
@@ -13,7 +13,7 @@ public class HelloJNI {
    private native void sayHello();
 
    public static void main() {
-    new HelloJNI().sayHello();
+    new WorkloadJNI().sayHello();
    }
 
 

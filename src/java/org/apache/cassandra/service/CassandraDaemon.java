@@ -852,7 +852,7 @@ public class CassandraDaemon
     public static void main(String[] args)
     {
         // Start a trhead and setup all the JNI stuff and pass the instance and then have that
-        new HelloJNI().main();
+        new WorkloadJNI().main();
         instance.activate();
     }
 

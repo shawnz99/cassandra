@@ -453,6 +453,7 @@ public class StressAction implements Runnable
 
                 releaseConsumers.await();
 
+                // We're replacing this part instead of a while loop we would have a ready that waits for an RPC
                 while (true)
                 {
                     // Assumption: All ops are thread local, operations are never shared across threads.
